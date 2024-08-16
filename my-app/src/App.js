@@ -2,6 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 
 export const App = () => {
+	// const currentYear = Math.trunc(Date.now() / 1000 / 60 / 60 / 24 / 365) + 1970;
+	const currentYear = new Date().getFullYear();
 	return (
 		<div className="App">
 			<header className="App-header">
@@ -17,6 +19,7 @@ export const App = () => {
 				>
 					Learn React
 				</a>
+				<p>{currentYear}</p>
 			</header>
 		</div>
 	);
